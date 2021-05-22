@@ -6,7 +6,7 @@
 O MongoDb possui diversas ferramentas como, por exemplo, mongo , mongosh , Compass e outras ferramentas de terceiros. Você pode utilizar o que achar melhor para executar as queries , o importante é realizá-las.
 Utilizando a coleção bios , construa queries para retornar os seguintes itens:
 
-[https://docs.mongodb.com/manual/reference/bios-example-collection/](Coleção bios)
+[Coleção bios](https://docs.mongodb.com/manual/reference/bios-example-collection/)
 
 
 
@@ -31,7 +31,7 @@ Utilizando o mongoimport , importe o arquivo books.json para a sua instância lo
 
 Para os exercícios a seguir, utilizaremos um dataset que contém dados de Super-Heróis.
 Faça o download do arquivo JSON:
-[https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/mongodb/superheroes-957c961ea234d06d7cfdae73c87d47a6.json](superheros)
+[Coleção superheros](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/mongodb/superheroes-957c961ea234d06d7cfdae73c87d47a6.json)
 
 Após fazer o download do arquivo, importe-o para o MongoDB através da ferramenta mongoimport.
 No seu terminal, utilize o seguinte comando (lembre-se de substituir o caminho do arquivo):
