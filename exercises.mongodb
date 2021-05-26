@@ -1,0 +1,28 @@
+use('class');
+//mongoimport --db class --collection superheroes  ./superheroes.json  //import bd
+//db.bios.find().limit(3).pretty();
+//db.bios.find().skip(5).limit(2);
+//db.books.find().count();
+//db.books.find({ status: 'PUBLISH'}).count();
+//db.books.find({},{title:1, isbn:1, pageCount:1, _id:0}).limit(3); 
+//db.books.find({status: 'MEAP'}, {title:1, authors:1, status:1}).skip(5).limit(10);
+//db.superheroes.find().limit(1);
+//db.superheroes.find({"aspects.height":{ $lt: 180 }});
+//db.superheroes.find({"aspects.height":{ $lt: 180 }}).count();
+//db.superheroes.find({"aspects.height":{ $lte: 180 }});
+//db.superheroes.find({"aspects.height":{ $gte: 200 }}).limit(1); //Retorna o primeiro
+//db.superheroes.findOne({"aspects.height": { $gte: 200}}) //EX 5
+//db.superheroes.find({"aspects.height": { $gte: 200}}).count(); //EX 6
+//db.superheroes.find({"aspects.eyeColor": 'green'}); //EX 7
+//db.superheroes.find({"aspects.eyeColor": 'blue'}).count(); //EX 8
+//db.superheroes.find({"aspects.hairColor":{ $in: ['No Hair', 'Black']}}); //EX 9
+//db.superheroes.find({"aspects.hairColor":{ $in: ['No Hair', 'Black']}}).count(); //EX 10
+//db.superheroes.find({ $or: [{"aspects.hairColor": { $ne: 'No Hair'}}, {"aspects.hairColor": { $ne: 'Black' }}]}).count(); //EX 11 ne = not equal(não é igual)
+//db.superheroes.count({"aspects.height": { $not: { $gt: 180}}}); //EX 12
+//db.superheroes.find({ $or : [{race: { $ne: 'Human'}}, {"aspects.height": { $lte: 180 }}]}); //EX 13
+//db.superheroes.find({ "aspects.height": { $in: [180 ,200]}, publisher: "Marvel Comics"}); //EX14
+//db.superheroes.find({$and: [{"aspects.weight": { $gte: 80, $lte: 100}},{race: { $in: ["Human", "Mutant"]}},{publisher: { $ne: "DC Comics"}}]}); //EX 15
+//db.superheroes.find({race: {$exists: false}}).count(); //EX16
+//db.superheroes.find({"aspects.hairColor": { $exists: true }}).count(); //EX17
+//db.superheroes.deleteOne({}, {publisher: "Sony Pictures"}); //EX18
+//db.superheroes.deleteMany({publisher: "George Lucas"}); EX19
